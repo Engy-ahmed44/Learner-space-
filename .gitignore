@@ -1,0 +1,7 @@
+.settings/
+.buildpath
+.classpath
+composer.lock
+.vscode
+vendor
+.DS_Store
