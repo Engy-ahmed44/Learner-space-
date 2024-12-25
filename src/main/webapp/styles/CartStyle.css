@@ -1,0 +1,165 @@
+body {
+    background-image: none !important;
+    background-color: #eee !important;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-thumbnail {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.cart-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.cart-item-header h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.cart-item-price p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #555;
+}
+
+.cart-item-actions {
+    margin-top: 10px;
+}
+
+.cart-item-remove-btn {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item-remove-btn:hover {
+    background-color: #c0392b;
+}
+
+.cart-summary {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.cart-summary h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #282828;
+}
+
+.cart-summary-details {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-summary-details th,
+.cart-summary-details td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    color: #555;
+}
+
+.cart-summary-actions {
+    margin-top: 20px;
+}
+
+.cart-checkout-container {
+    padding: 15px 30px;
+    background-color: var(--view-header-background);
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+
+.payment-options {
+	display:						flex;
+	justify-content:				flex-end;
+	align-items:					center;
+	flex: 							1;
+}
+
+.fawry, .paypal, .credit {
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	border: none;
+	height: 100%;
+	flex: 1;
+}
+
+.fawry {
+	background-color: #fbff00;
+	color: #0118ab;
+	border-bottom-left-radius: 5px;
+}
+
+.fawry:hover {
+	background-color: #d4d660;
+	color: #2e3faf;
+}
+
+.paypal {
+	background-color: #ffffff;
+	color: #158aff;
+}
+
+.paypal:hover {
+	background-color: #cecece;
+	color: #005ab3;
+}
+
+.credit {
+	background-color: #000000;
+	color: #ffffff;
+	border-bottom-right-radius: 5px;
+}
+
+.credit:hover {
+	background-color: #303030;
+	color: #e7e7e7;
+}
