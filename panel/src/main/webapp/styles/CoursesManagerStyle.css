@@ -1,0 +1,18 @@
+/* Courses manager */
+.course_logo img {
+	max-width:						100px;
+}
+
+.course_logo {
+	width:							100px;
+}
+
+#include_modules ul li {
+	display: 						flex;
+    flex-direction: 				row;
+    justify-content: 				space-between;
+}
+
+#include_modules ul li .form-group {
+	margin-bottom:					0;
+}

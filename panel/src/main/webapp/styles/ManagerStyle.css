@@ -1,0 +1,31 @@
+.manager-logo {
+	display:						block;
+    height: 						200px;
+    border: 						1px solid var(--border-light);
+    border-radius: 					5px;
+    margin:							auto;
+    margin-bottom:					30px;
+}
+
+.manager-table-logo, 
+.manager-table-logo img {
+	width:							100px;
+	height:							70px;
+}
+
+.cbx-list ul {
+	list-style:						none;
+	padding:						0;
+}
+
+.cbx-list input[type='checkbox'] {
+	margin-right:					10px;
+}
+
+.table-price {
+	width:							100px;
+}
+
+.counter {
+	width:							150px;
+}

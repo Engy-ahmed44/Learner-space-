@@ -1,0 +1,15 @@
+{
+	"autoload": {
+		"psr-4": {
+			"panel\\config\\": "src/main/php/config/",
+			"panel\\controllers\\": "src/main/php/controllers/",
+			"panel\\dao\\": "src/main/php/dao/",
+			"panel\\domain\\": "src/main/php/domain/",
+			"panel\\repositories\\": "src/main/php/repositories/",
+			"panel\\util\\": "src/main/php/util/",
+			"panel\\views\\": "src/main/php/views/",
+			"panel\\auth\\": "src/main/php/auth/"
+		}
+	},
+	"require-dev": {}
+}
