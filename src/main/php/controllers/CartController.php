@@ -182,10 +182,10 @@ class CartController extends Controller
         $checkoutFacade = new CheckoutFacade($dbConnection, $student->getId());
         $transactionId = $checkoutFacade->processCheckout($paymentMethod);
 
-        if ($transactionId) {
-            echo json_encode(['success' => true, 'transactionId' => $transactionId]);
-        } else {
-            echo json_encode(['success' => false, 'error' => 'Payment failed or invalid method']);
-        }
+        // if ($transactionId) {
+        //     echo json_encode(['success' => true, 'transactionId' => $transactionId]);
+        // } else {
+        //     echo json_encode(['success' => false, 'error' => 'Payment failed or invalid method']);
+        // }
     }
 }

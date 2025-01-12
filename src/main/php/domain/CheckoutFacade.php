@@ -2,9 +2,11 @@
 
 namespace domain;
 
+use auth\AuthManager;
 use dao\CartDAO;
 use dao\TransactionsDAO;
 use dao\BillDAO;
+use dao\StudentsDAO;
 use domain\PaymentManager;
 use domain\strategy\payment\FawryStrategy;
 use domain\strategy\payment\PaypalStrategy;
@@ -81,11 +83,19 @@ class CheckoutFacade
         $bundles = $cartDao->clearCart($this->studentId);
         $billDao = new BillDAO($this->dbConnection);
 
+        $studentDAO = new StudentsDAO($this->dbConnection, $this->studentId);
+        foreach($bundles as $bundle) {
+            $studentDAO->addBundle($bundle->getIdBundle());
+        }
+
+
         $billDao->createBill(
             $this->studentId,
             $transactionId,
             $totalCost,
             $bundles
         );
+
+
     }
 }
